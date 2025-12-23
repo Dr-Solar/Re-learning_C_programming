@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() {
+    int a,b,c,d,e,f,g,h,i,j,k,l;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    c=a+b;
+    printf("multiplication table of seven\n");
+    printf("%d\n",c);
+    d=c+b;
+    printf("%d\n",d);
+    e=d+b;
+    printf("%d\n",e);
+    f=e+b;
+    printf("%d\n",f);
+    g=f+b;
+    printf("%d\n",g);
+    h=g+b;
+    printf("%d\n",h);
+    i=h+b;
+    printf("%d\n",i);
+    j=i+b;
+    printf("%d\n",j);
+    k=j+b;
+    printf("%d\n",k);
+    l=k+b;
+    printf("%d\n",l);
+    return 0;
+}
