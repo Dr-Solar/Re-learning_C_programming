@@ -35,6 +35,7 @@ y=x-5;
 printf("Result= %d",y);
      return 0;
      }
+
 // Question-3: Get a number from the user,multiply that number by 3 and print result
 
 #include <stdio.h>
@@ -46,7 +47,111 @@ y=3*x;
 printf("Result= %d",y);
      return 0;
      }
+
   //Question-4: Get a number from the user,divide that number by 6 and print result
 
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x/6;
+printf("Result= %d",y);
+     return 0;
+     }
 
-     
+//Question-5: Get a number from the user,divide that number by 8 and print the remainder.
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%8;
+printf("Remainder= %d",y);
+     return 0;
+     }
+
+//Question-6: Get a two digit number from the user,print the one's digit .
+
+ #include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%10;
+printf("One's digit= %d",y);
+     return 0;
+     }
+
+//Question-7: Get a two digit number from the user,print the ten's digit .
+
+ #include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x/10;
+printf("Ten's digit= %d",y);
+     return 0;
+     }
+
+//Question-8: Get a three digit number from the user,print the one's digit .
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%10;
+printf("One's digit= %d",y);
+     return 0;
+     }
+
+//Question-9: Get a three digit number from the user,print the hundred's digit .
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x/100;
+printf("Hundred's digit= %d",y);
+     return 0;
+     }
+
+//Question-10: Get a three digit number from the user,print the ten's digit .
+
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%100;
+y=y/10;
+printf("ten's digit= %d",y);
+     return 0;
+     }
+
+//Question-11: Get a three digit number from the user,print the sum of the digits.
+
+// With 4 variables 
+#include <stdio.h>
+int main() {
+int x,y,z,a,sum;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%100;
+z=y/10;
+y=x/100;
+a=x%10;
+sum=y+z+a;
+printf("hundred's digit= %d",y);
+printf("ten's digit= %d",z);
+printf("one's digit= %d",a);
+printf("Sum= %d",sum);
+     return 0;
+     }
+
+
