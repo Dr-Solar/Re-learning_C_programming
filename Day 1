@@ -4,7 +4,7 @@ int main() {
     a=0;
     scanf("%d",&b);
     c=a+b;
-    printf("multiplication table of seven\n");
+    printf("multiplication table of a number\n");
     printf("%d\n",c);
     d=c+b;
     printf("%d\n",d);
