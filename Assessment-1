@@ -1,0 +1,52 @@
+//Assessment 1
+
+// use this as program template
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+//your code here
+printf("Result= %d",y);
+     return 0;
+     }
+
+//Question-1: Get a number from the user,add 2 to that number and print result.
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x+2;
+printf("Result=%d",y);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    return 0;
+}
+
+// Question-2: Get a number from the user,substract 5 from that number and print result.
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x-5;
+printf("Result= %d",y);
+     return 0;
+     }
+// Question-3: Get a number from the user,multiply that number by 3 and print result
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=3*x;
+printf("Result= %d",y);
+     return 0;
+     }
+  //Question-4: Get a number from the user,divide that number by 6 and print result
+
+
+     
