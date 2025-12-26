@@ -154,4 +154,111 @@ printf("Sum= %d",sum);
      return 0;
      }
 
+//Question-12: Get a two digit number from the user,print the reverse of that number.
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%10;
+y=10*y + x/10;
+printf("Reverse number= %d",y);
+     return 0;
+     }
+
+//Question-13: Get a three digit number from the user,print the reverse of that number.
+
+//only three variables 
+#include <stdio.h>
+int main() {
+int x,y,z;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%10;
+z=x%100;
+z=z-y;
+y=x/100;
+z=z+y;
+y=x%10;
+y=100*y;
+y=y+z;
+printf("Reverse number= %d",y);
+     return 0;
+     }
+
+//Question-14: Get a four digit number from the user,only reverse first two digits (one's and ten's) and then print
+
+//Again only three variables
+#include <stdio.h>
+int main() {
+int x,y,z;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%100;
+z=y/10;//tens
+y=x%10;//ones
+z=y*10+z;
+y=x%100;
+x=x-y;
+y=x+z;
+printf("Two digit Reversed number= %d",y);
+     return 0;
+     }
+
+//Question-15: Get a two digit number from the user,make the one's digit zero and print 
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%10;
+x=x-y;
+y=x;
+printf("One's digit zero= %d",y);
+     return 0;
+     }
+
+//Question-16: Get a two digit number from the user,make the ten's digit one and print
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x/10;
+y=y/y;
+y=y*10+x%10;
+printf("Ten's digit one= %d",y);
+     return 0;
+     }
+
+//Question-17: Get a three digit number from the user,make the one's digit 2 and print
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%10;
+x=x-y;
+y=2*y/y;
+y=x+y;
+printf("one's digit 2= %d",y);
+     return 0;
+     }
+
+//Question-18: Get a number from the user,substract 5 from the number if it is odd and print the result.do not use if condition
+
+#include <stdio.h>
+int main() {
+int x,y;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x/10;
+printf("Result= %d",y);
+     return 0;
+     }
+
 
