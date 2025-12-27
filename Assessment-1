@@ -256,7 +256,9 @@ int main() {
 int x,y;
 printf("Enter Number:");
 scanf("%d",&x);
-y=x/10;
+y=x%2;
+y=y*x;
+y=y-5;
 printf("Result= %d",y);
      return 0;
      }
