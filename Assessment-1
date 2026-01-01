@@ -263,4 +263,23 @@ printf("Result= %d",y);
      return 0;
      }
 
+//Question-19: Get a number from the user and check if the ten's digit is odd . if it is odd then substract 5 from the number and Dont use "if"
+
+#include <stdio.h>
+int main() {
+int x,y,z,a;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%100;
+y=y/10;
+z=y;
+a=y%2;
+y=a*z;
+x=x-(z*10);
+x=x+(y*10);
+y=x-5*a;
+printf("Result= %d",y);
+     return 0;
+     }
+
 
