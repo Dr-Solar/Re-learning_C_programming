@@ -4,3 +4,7 @@ Today lets start with a link for a compiler which shows the **stack** or **memor
 
 
 Okay lets jump onto main topic today i learned more about functions and loops, with that information I'm trying to get the sum of first ten natural numbers . Though this might sound simple but for me it was a new experience.The loop i used was "goto" loop and also if condition as well.
+
+Also im adding print function after every functional line just to get the flow of the code so i can easily debugg any problems in my code . 
+
+Thank you
