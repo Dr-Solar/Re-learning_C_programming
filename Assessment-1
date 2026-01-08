@@ -329,7 +329,7 @@ if not then do it again until we get a single digit number as result
 
 #include <stdio.h>
 int main() {
-int a,b,x,y,z,sum;
+int a,b,c,x,y,z,sum;
 printf("Enter Number:\n");
 scanf("%d",&x);
 a=x/100;//hundred's
@@ -353,9 +353,37 @@ printf("9:%d\n",sum);
 b=sum/10;
 printf("10:%d\n",b);
 y=y*(1-a)*b + sum*(1-b);
+printf("11:%d\n",y);
+z=sum/10;
+printf("12:%d\n",z);
+c=sum%10;
+printf("13:%d\n",c);
+sum=z+c;
+printf("14:%d\n",sum);
+c=sum/10;
+printf("15:%d\n",c);
+y=y*(1-a)*b + y*(1-b)*c + sum*(1-c);
+printf ("Result is: %d",y);
+    return 0;
+
+
+//Question-23:Get a three digit number from the user and make the ten's digit zero and print the result 
+
+#include <stdio.h>
+int main() {
+int x,y,z;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%100;
+z=y/10;
+z=z*10;
+y=x-z;
 printf ("Result is: %d",y);
     return 0;
 }
 
 
+//Question-24:
 
+
+}
