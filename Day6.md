@@ -44,6 +44,25 @@ This problem was so easy just find the ten's digit and multiply it by 10
 Then substract the result from the number from user 
 Then print the result 
 
-Next question is ""
+Next question is "Get a four digit number from the user and reverse the first two digits of the number and print the result "
+This question is also easy compared to the question no 25.
+For this we need the thousand's and hundred's digit numbers 
+Then substract the 1000's digit*1000 and 100"s digit*100 from the number given.
+After that add 1000's digit*100 and 100's digit*1000 to the above result. 
+Print the final result.
 
+
+Next question is "Get a two digit number from the user and  print the sum of the digits"
+This is also very simple 
+Get the ten's digit and one's digit of the given number 
+Add the digits and get the sum 
+Print the sum 
+
+
+
+
+And finally the assessment 1 is over .I got a 100 % mark. Damn that was way too much fun i think i missed my dinner .
+Im spending too much time time on coding that my other addictions are slowly wearing away .
+
+Thank you
 
