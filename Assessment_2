@@ -1,0 +1,27 @@
+Hello guys after the assessment1 Im jumping on to the assessment 2
+
+Here also there is program template to follow 
+#include <stdio.h>
+int main() {
+int x,y;
+scanf("%d",&x);
+printf("Given Number is= %d\n",x);
+//your code here
+y=x;
+printf("Result= %d",y);
+     return 0;
+     }
+
+Question 1:Get a number from user,check if it is equal to 50 .If it is equal to 50 then print 1 otherwise print 0
+
+
+#include <stdio.h>
+int main() {
+int x,y;
+scanf("%d",&x);
+printf("Given Number is= %d\n",x);
+//your code here
+y=50;
+printf("Result = %d\n", y==x);
+     return 0;
+     }
