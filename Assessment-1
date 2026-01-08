@@ -230,7 +230,7 @@ scanf("%d",&x);
 y=x/10;
 y=y/y;
 y=y*10+x%10;
-printf("Ten's digit one= %d",y);
+printf("Result is = %d",y);
      return 0;
      }
 
@@ -245,7 +245,7 @@ y=x%10;
 x=x-y;
 y=2*y/y;
 y=x+y;
-printf("one's digit 2= %d",y);
+printf("Result is = %d",y);
      return 0;
      }
 
@@ -261,7 +261,7 @@ z=y*x;
 z=(z-5)*y;
 z=z+(x*(1-y));
 y=z;
-printf ("Your number is: %d",y);
+printf ("Result is: %d",y);
     return 0;
 }
 
@@ -279,12 +279,83 @@ z=y*x;
 z=(z-5)*y;
 z=z+(x*(1-y));
 y=z;
-printf ("Your number is: %d",y);
+printf ("Result is: %d",y);
     return 0;
 }
 
 
-//Question 
+//Question-20: Get a two digit number from the user and substract 5 from it if the sum of its digits is odd and print the result .Dont use 'if' and just print the number if sum is even
+
+#include <stdio.h>
+int main() {
+int x,y,z;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x%10;
+z=x/10;
+y=z+y;
+y=y%2;
+z=(x-5)*y;
+z=z+(1-y)*x;
+y=z;
+printf ("Result is: %d",y);
+    return 0;
+}
+
+
+//Question-21: Get a three digit number from the user and substract 5 from it if the one's digit and 100's digit are both odd and then print the result 
+
+#include <stdio.h>
+int main() {
+int x,y,z;
+printf("Enter Number:");
+scanf("%d",&x);
+y=x/100;
+z=x%10;
+y=y%2;
+z=z%2;
+y=y*z;
+z=(x-5)*y;
+z=z+(1-y)*x;
+y=z;
+printf ("Result is: %d",y);
+    return 0;
+}
+
+
+//Question-22:Get a three digit number from user.If sum of digits is less than 10 print sum.Otherwise add the digits of the sum ,if that is less than 10 then print sum 
+if not then do it again until we get a single digit number as result
+
+
+#include <stdio.h>
+int main() {
+int a,b,x,y,z,sum;
+printf("Enter Number:\n");
+scanf("%d",&x);
+a=x/100;//hundred's
+printf("1:%d\n",a);
+y=(x%100)/10;//ten's
+printf("2:%d\n",y);
+z=x%10;//one's
+printf("3:%d\n",z);
+sum= a+z+y;
+printf("4:%d\n",sum);
+a=sum/10;
+printf("5:%d\n",a);
+y=sum*(1-a);
+printf("6:%d\n",y);
+z=sum/10;
+printf("7:%d\n",z);
+b=sum%10;
+printf("8:%d\n",b);
+sum=z+b;
+printf("9:%d\n",sum);
+b=sum/10;
+printf("10:%d\n",b);
+y=y*(1-a)*b + sum*(1-b);
+printf ("Result is: %d",y);
+    return 0;
+}
 
 
 
