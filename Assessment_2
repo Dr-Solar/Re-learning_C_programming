@@ -27,10 +27,6 @@ printf("Result = %d\n", y==x);
      }
 
 
-stefanzweifel/git-auto-commit-action@v7
-
-
-
 
 
 
