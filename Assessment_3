@@ -105,7 +105,39 @@ int main(){
     return 0;
 }
 
+Question 8: Get a two digit number from the user and check if its digit 0 and 1 are not equal.If yes the print success otherwise print Failure
 
+#include<stdio.h>
+int main(){
+    int x,y;
+    scanf("%d",&x);
+    y=x/10;
+    x=x%10;
+    if(y!=x){
+        printf("success");
+    }
+    else
+    printf("failure");
+    return 0;
+}
+
+Question 9: Get a two digit number from the user and check if its digit 0 is less than digit 1.If yes the print success otherwise print Failure
+
+#include<stdio.h>
+int main(){
+    int x,y;
+    scanf("%d",&x);
+    y=x/10;
+    x=x%10;
+    if(x<y){
+        printf("success");
+    }
+    else
+    printf("failure");
+    return 0;
+}
+
+Question 10: Get a two digit number from the user and check if its digit 0 is greater than digit 1.If yes the print success otherwise print Failure
 
 
 
