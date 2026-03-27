@@ -188,8 +188,50 @@ int main (){
 
 Question 13: Get a three digit number from the user and check if its digit 1 and digit 0 are equal and digit 1 and digit 2 are different.If yes the print success otherwise print Failure
 
+#include<stdio.h>
+int main(){
+    int x,y,z;
+    scanf("%d",&x);
+    y=x/10;
+    z=y/10;
+    y=y%10;
+    x=x%10;
+    x=y/x;
+    z=z*x;
+    y=y*x;
+    if(z!=y){
+        printf("success");
+        }
+    else 
+    printf("failure");
+    return 0;
+}
 
+Question 14: Get a four digit number from the user and check if its first 2 digits and last 2 digits are same .If yes the print success otherwise print Failure
 
+#include<stdio.h>
+int main(){
+    int w,x,y,z;
+    scanf("%d",&x);
+    z=x/1000;//d-3
+    w=x/100;
+    w=w%10;//d-2
+    y=x%100;
+    y=y/10;//d-1
+    x=x%10;//d-0
+    y=((z*1000)/(y));
+    x=((w*1000)/(x));
+    y=y-x;
+    printf("%d\n",y);
+    if(y==0){
+        printf("success");
+    }
+    else
+    printf("failure");
+    return 0;
+}
+
+Finished
 
 
 
