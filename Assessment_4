@@ -1,0 +1,98 @@
+Welcome 
+///////////////////////////
+Rules
+*Use only int variables
+*Use only Decimals
+*Use only if else and goto statement
+*no for loop
+*Dont use array,pointers,string etc
+
+//////////////////////////
+Code template:
+#include<stdio.h>
+int main(){
+int x;
+//your code
+loop:if(x<_){
+//your code 
+goto loop;
+}
+return 0;
+}
+///////////////////////////
+
+Question 1:Write a loop program to write 1 to 5 one by one
+
+#include<stdio.h>
+int main(){
+    int x;
+    x=0;
+    loop:if(x<5){
+        x=x+1;
+        printf("%d\n",x);
+        goto loop;
+    }
+    return 0;
+}
+
+Question 2:Write a loop program to write 5 to 1 one by one
+
+#include<stdio.h>
+int main(){
+    int x;
+    x=6;
+    loop:if(x>1){
+        x=x-1;
+        printf("%d\n",x);
+        goto loop;
+    }
+    return 0;
+}
+
+Question 3:Write a loop program to write sum of numbers from 1 to 5
+
+#include<stdio.h>
+int main (){
+    int x,sum;
+    x=0;
+    loop:if(x<5){
+        x=x+1;
+        sum=sum+x;
+       goto loop;
+    }
+     printf("%d\n",sum);
+     return 0;
+}
+
+Question 4:Write a loop program to write sum of numbers from 1 to 6
+
+#include<stdio.h>
+int main(){
+    int x,sum;
+    x=0;
+    loop:if(x<6){
+        x=x+1;
+        sum=sum+x;
+        goto loop;
+    }
+    printf("%d\n",sum);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
