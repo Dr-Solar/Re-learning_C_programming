@@ -79,12 +79,129 @@ int main(){
     return 0;
 }
 
+Question 5:Write a loop program to print odd number between 1 and 9
 
+#include<stdio.h>
+int main(){
+    int x,y;
+    x=1;
+  loop:  if(x<10){
+        y=x%2;
+        y=y*x;
+        printf("%d\n",y);
+        x=x+2;
+        goto loop;    
+    }
+    return 0;
+}
 
+Question 6:Write a loop program to print two digit odd number below 20
 
+#include<stdio.h>
+int main(){
+    int x,y;
+    x=11;
+    loop:if(x<20){
+        y=x%2;
+        y=y*x;
+        printf("%d\n",y);
+        x=x+2;
+        goto loop;
+    }
+    return 0;
+}
 
+Question 7:Write a loop program to print two digit odd numbers whose sum of digits is 7
 
+#include<stdio.h>
+int main(){
+    int x,y,z;
+    x=9;
+    loop:if(x<100){
+        x=x+2;
+        y=x%10;
+        z=x/10;
+        y=y+z;
+      //  printf("1:%d\n",y);
+       // printf("2:%d\n",x);
+        if(y==7){
+            printf("3:%d\n",x);
+        }
+        else
+        y=y-y;
 
+        goto loop;
+    }
+    return 0;
+}
+
+Question 8:Write a loop program to print two digit even numbers whose sum of digits is 6
+
+#include<stdio.h>
+int main(){
+    int x,y,z;
+    x=8;
+   loop:if(x<100){
+    x=x+2;
+    y=x/10;
+    z=x%10;
+    y=y+z;
+    if(y==6){
+        printf("%d\n",x);
+    }
+    else 
+    y=y-y;
+    goto loop;
+   }
+return 0;
+}
+
+Question 9:Write a loop program to print sum of two digit odd numbers whose sum of digits is 7
+
+#include<stdio.h>
+int main(){
+    int x,y,z,sum;
+    x=9;
+    sum=0;
+    loop:if(x<100){
+        x=x+2;
+        y=x/10;
+        z=x%10;
+        y=y+z;
+        if(y==7){
+            sum=sum+x;
+            printf("1:%d\n",sum);
+        }
+        else 
+        y=0;
+        goto loop;
+    }
+    printf("2:%d\n",sum);
+    return 0;
+}
+
+Question 10:Write a loop program to print sum of two digit odd numbers whose ten's digit is 7
+
+#include<stdio.h>
+int main(){
+    int x,y,sum;
+    x=9;
+    sum=0;
+    loop:if(x<100){
+        x=x+2;
+        y=x/10;
+        if(y==7){
+            sum=sum+x;
+        }
+        else 
+        y=0;
+        goto loop;
+    }
+    printf("%d\n",sum);
+    return 0;
+}
+
+Question 11:Write a loop program to print sum of two digit odd numbers whose ten's digit is 7
 
 
 
