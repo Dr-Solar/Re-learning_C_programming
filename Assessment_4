@@ -201,7 +201,43 @@ int main(){
     return 0;
 }
 
-Question 11:Write a loop program to print sum of two digit odd numbers whose ten's digit is 7
+Question 11:Write a program to get a number from the user and print the total number of digits in that number.
+
+#include <stdio.h>
+int main() {
+    int x,y;
+    scanf("%d",&x);
+    y=0;
+    loop:if(x>0){
+        x=x/10;
+        y=y+1;
+        goto loop;
+    }
+    printf("%d",y);
+    return 0;
+}
+
+
+Question 12:Write a program to get a number from the user and print sum of all the digits
+
+#include<stdio.h>
+int main(){
+    int x,y,sum;
+    scanf("%d",&x);
+    sum=0;
+    loop:if(x>0){
+        sum=sum+(x%10);
+        x=x/10;
+        y=y+1;
+        goto loop;
+    }
+    printf("%d",sum);
+    return 0;
+}
+
+Question 13:Write a program to get a number from the user and print reverse of that number 
+
+
 
 
 
