@@ -237,6 +237,42 @@ int main(){
 
 Question 13:Write a program to get a number from the user and print reverse of that number 
 
+#include <stdio.h>
+int main() {
+int w,x,y,z,reverse;
+scanf("%d",&x);
+reverse=0;
+y=0;
+z=x;
+loop1:if(x>0){
+    x=x/10;
+    y=y+1;
+    goto loop1;  
+}
+x=z;
+w=1;
+loop2:if(y>0){
+    w=w*10;
+    y=y-1;
+    goto loop2;
+}
+y=w;
+w=0;
+loop3:if(x>0){
+    z=x%10;
+    reverse=reverse+(z*(y/10));
+    y=y/10;
+    x=x/10;
+    w=w+1;
+    goto loop3;
+}
+printf("%d",reverse);
+    return 0;
+}
+
+
+
+
 
 
 
