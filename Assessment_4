@@ -270,6 +270,44 @@ printf("%d",reverse);
     return 0;
 }
 
+Question 14:Write a program to get a number from the user and interchange first and last digits of the number and print the result
+
+#include<stdio.h>
+int main(){
+    int A,w,x,y,z,dig1,digf;
+    scanf("%d",&x);
+    y=0;
+    A=x;
+    dig1=x%10;
+
+// for getting total digits in the number(y),dig1=one's digit.
+    loop1:if(x>10){
+        x=x/10;
+        y=y+1;
+        goto loop1;
+    }
+//digf = first and topmost digit from left
+    //y=y+1;
+    digf=x;
+    x=A;
+    z=dig1;
+    w=digf;
+    
+// for getting the fth digit in the 10^f th state ,also the one's digit also in 10^f form .
+    loop2:if(y>0){
+        digf=digf*10;
+        z=z*10;
+        y=y-1;
+        goto loop2;
+    }
+
+    x=A;
+    x=x-digf-dig1+z+w;
+    printf("Result:%d\n",x);
+    return 0;
+}
+
+Question 15:Write a program to get a number from the user and interchange first and last digits of the number and print the result
 
 
 
