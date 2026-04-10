@@ -307,12 +307,112 @@ int main(){
     return 0;
 }
 
-Question 15:Write a program to get a number from the user and interchange first and last digits of the number and print the result
+Question 15:Write a program to get a number from the user and if the last digit(ones,tens,etc) of the number is even print the same number .
+If the last digit of the number is odd then subtract 1 from the last digit and print the number (Note:last digit -MSB)
+
+#include <stdio.h>
+int main() {
+    int A,x,y,z;
+    scanf("%d",&x);
+    y=0;
+    A=x;
+    loop1:if(x>0){
+        x=x/10;
+        y=y+1;
+        goto loop1;
+    }
+    x=A;
+    z=1;
+    A=y;
+
+    loop2:if(y>1){
+        z=z*10;
+        y=y-1;
+        goto loop2;
+    }
+
+    y=A;
+    A=x;
+    y=y%2;
+
+    if(y==1){
+        x=x-z;
+    }
+    else 
+    x=x;
+
+    printf("%d\n",x);
+
+    return 0;
+}
+
+Question 16:Write a program to get a number from the user and if the last digit(eg : for 123 last digit is 1) of the number is even print the same number .
+If the last digit of the number is odd then subtract 1 from the last digit and print the number (Note:last digit -MSB)
+
+#include <stdio.h>
+int main() {
+    int A,x,y,z,w;
+    scanf("%d",&x);
+    y=0;
+    A=x;
+    loop1:if(x>10){
+        x=x/10;
+        y=y+1;
+        goto loop1;
+    }
+    w=x;
+    x=A;
+    y=y+1;
+    A=y;
+    z=1;
+
+    loop2:if(y>1){
+        z=z*10;
+        y=y-1;
+        goto loop2;
+    }
+
+    y=A;
+    A=x;
+    w=w%2;
+
+    if(w==1){
+        x=x-z;
+    }
+    else 
+    x=x;
+
+    printf("Result:%d\n",x);
+    return 0;
+}
+
+Question 17: Write a program to get a number from the user and check if it is prime or not . Print prime if it is prime and not prime when viceversa
+
+#include<stdio.h>
+int main(){
+    int A,x,y,z;
+    scanf("%d",&x);
+    y=1;
+    A=x;
+
+    loop:if(y<x){
+        x=x%2*y;
+        y=2*(y+1);
+        printf("1:%d\n",x);
+        goto loop;
+    }
+    
+    if(x==1){
+        printf("Prime");
+    }
+    else
+    printf("Not Prime");
+
+    return 0;
+}
 
 
-
-
-
+End.....
 
 
 
