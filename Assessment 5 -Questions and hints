@@ -29,4 +29,11 @@ Question 7:Write a loop program to print two digit odd numbers , whose sum of di
 Question 8:Write a loop program to print two digit even numbers , whose sum of digits is 6
 -Check what the condition for even number is then apply it.
 
+Question 9:Write a loop program to print sum of two digit even numbers , whose one's digit is 5
+- derive a formula to get one's digit then apply it to get the sum
+
+Question 10: Write a loop program to print sum of two digit even numbers , whose first digit is 5
+-same logic as 9 but u need first digit instead of one's digit.
+
+
 
