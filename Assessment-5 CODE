@@ -121,9 +121,39 @@ int main(){
     return 0;
 }
 
+Question 9:Write a loop program to print sum of two digit even numbers , whose one's digit is 5
 
+#include <stdio.h>
+int main() {
+    int x,y,sum;
+    sum=0;
+    for(x=10;x<100;x++){
+        y=x%10;
+        if(y==5){
+            sum=sum+x;
+        }
+    }
+    printf("%d\n",sum);
+    return 0;
+}
 
+Question 10: Write a loop program to print sum of two digit even numbers , whose first digit is 5
 
+#include <stdio.h>
+int main() {
+    int x,y,sum;
+    sum=0;
+    for(x=10;x<100;x++){
+        y=x/10;
+        if(y==5){
+            sum=sum+x;
+        }
+    }
+    printf("%d\n",sum);
+    return 0;
+}
+
+Question 11: Write a loop program to print sum of two digit even numbers , whose first digit is 5
 
 
 
