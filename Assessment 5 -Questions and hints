@@ -3,3 +3,30 @@
 3)use for loop for the problems. u can use if for condition not for loop
 4)dont use pointers,strings and arrays
 
+
+Question -1:Write a loop program to print 1 to 5 ONE BY ONE 
+-Easy question think and use the for loop for this 
+
+Question 2:Write a loop program to print 5 to 1 one by one 
+-Easy question think and use the for loop for this 
+
+
+Question 3:Write a loop program to print sum of 1 to 5
+-think how to get the sum and write the code 
+
+Question 4:Write a loop program to print sum of 6 to 1
+-same advise as previous one
+
+Question 5:Write a loop program to print odd number between 1 and 9
+-think about what the speciality of odd number is and try to bring it into a formula . 
+
+Question 6:Write a loop program to print two digit odd number below 20
+-same thing but two digit this time
+
+Question 7:Write a loop program to print two digit odd numbers , whose sum of digits is 7
+-Ok this is a bit tough but try the same logic as question 6 but a little more improvised
+
+Question 8:Write a loop program to print two digit even numbers , whose sum of digits is 6
+-Check what the condition for even number is then apply it.
+
+
