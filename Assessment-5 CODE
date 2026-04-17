@@ -153,7 +153,46 @@ int main() {
     return 0;
 }
 
-Question 11: Write a loop program to print sum of two digit even numbers , whose first digit is 5
+Question 11: Write a loop program to sum of two digit odd numbers whose ten's digit is 7
+
+#include<stdio.h>
+int main(){
+    int x,y,z,sum;
+    sum=0;
+    for(x=10;x<100;x++){
+        y=x%2;
+        z=x/10;
+        if(y==1){
+            if(z==7){
+            sum =sum+x;
+          }
+        }
+        
+    }
+    printf("%d\n",sum);
+    return 0;
+}
+
+Question 12: Write a program to get a number from the user and print the total number of digits in the number 
+
+#include<stdio.h>
+int main(){
+    int x,A,i,z;
+    z=1;
+    scanf("%d",&x);
+    A=x;
+    for(i=0;i<x+1;i++){
+        z=z+1;
+        x=x/10;
+        if(x==0){
+            i=A+1;
+        }
+    }
+    printf("%d",z);
+    return 0;
+}
+
+Question 13: Write a program to get a number from the user and print the total sum of digits in the number 
 
 
 
